@@ -1,0 +1,23 @@
+21:03:46 **** Incremental Build of configuration Debug for project 2_USART2_Example ****
+make all 
+Building file: ../Src/msp.c
+Invoking: MCU GCC Compiler
+/home/alex/Desktop/Mastering_Microcontroller_Course_MCU2/Workspace/2_USART2_Example/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F334x8 -I"/home/alex/Desktop/Mastering_Microcontroller_Course_MCU2/Workspace/2_USART2_Example/Inc" -I"/home/alex/Desktop/Mastering_Microcontroller_Course_MCU2/Workspace/2_USART2_Example/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/home/alex/Desktop/Mastering_Microcontroller_Course_MCU2/Workspace/2_USART2_Example/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/home/alex/Desktop/Mastering_Microcontroller_Course_MCU2/Workspace/2_USART2_Example/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/home/alex/Desktop/Mastering_Microcontroller_Course_MCU2/Workspace/2_USART2_Example/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/msp.d" -MT"Src/msp.o" -o "Src/msp.o" "../Src/msp.c"
+Finished building: ../Src/msp.c
+ 
+Building target: 2_USART2_Example.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F334R8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "2_USART2_Example.elf" @"objects.list"   -lm
+Finished building target: 2_USART2_Example.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "2_USART2_Example.elf" "2_USART2_Example.hex"
+arm-none-eabi-size "2_USART2_Example.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1104	     20	   1564	   2688	    a80	2_USART2_Example.elf
+ 
+
+21:03:48 Build Finished (took 1s.308ms)
+
